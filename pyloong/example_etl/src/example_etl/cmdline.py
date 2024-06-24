@@ -5,6 +5,7 @@ from click import Context
 from example_etl import __version__
 from example_etl.config import settings
 from example_etl.log import init_log
+from example_etl.manage import Manage
 
 
 @click.group(invoke_without_command=True)
@@ -38,4 +39,6 @@ def main(ctx: Context, version: str, verbose: bool, debug: bool):
 def run():
     """Run command"""
     init_log()
-    click.echo('run......')
+    # click.echo('run......')
+    manage = Manage()
+    manage.run()

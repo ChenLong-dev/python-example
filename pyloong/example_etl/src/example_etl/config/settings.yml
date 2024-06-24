@@ -2,3 +2,10 @@ verbose: false
 debug: false
 loglevel: warning
 logpath: /tmp/example_etl
+
+file_extractor_path: /tmp/foo.txt
+file_loader_path: /tmp/bar.txt
+
+extractor_name: file
+loader_name: file
+transformer_name: strip
