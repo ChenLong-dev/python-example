@@ -25,6 +25,8 @@ mkdocs = "^1.4.3"
 mkdocs-material = "^8.5.11"
 pytest-pylint = "^0.19.0"
 pre-commit = "^3.3.2"
+pytest-mock = "^3.14.0"
+pytest-cov = "^5.0.0"
 
 [tool.poetry.plugins."example_etl.extractor"]
 file = "example_etl.extractor.file:FileExtractor"
